@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Img Replica Task</title>
+</head>
+<body>
+    <section>
+
+        <div class="courses">
+
+            <div class="heading-tabs">
+                <h1>Browse Topics</h1>
+                <div class="tabs">
+                    <div class="tabs-list">
+                        <button class="tabs-link active" onclick="openCourse(event, 'Design')">Design</button>
+                        <button class="tabs-link" onclick="openCourse(event, 'Marketing')">Marketing</button>
+                        <button class="tabs-link" onclick="openCourse(event, 'Finance')">Finance</button>
+                        <button class="tabs-link" onclick="openCourse(event, 'Music')">Music</button>
+                        <button class="tabs-link" onclick="openCourse(event, 'Education')">Education</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-cards">
+
+                <div id="Design" class="cards-display">
+                    <div class="cards-container">
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Web Design</h4>
+                                    <div class="card-number">
+                                        <p>14</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Topic Listing Template based on Bootstrap 5</p>
+                            </div>
+                            <img src="img/Web Design.svg" alt="web design">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Graphic</h4>
+                                    <div class="card-number">
+                                        <p>75</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Graphic.svg" alt="graphic">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Logo Design</h4>
+                                    <div class="card-number">
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Logo Design.svg" alt="logo design">
+                        </div>
+                    
+                    </div>
+
+                </div>
+
+                <div id="Marketing" class="cards-display" style="display:none">
+                    <div class="cards-container">
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Digital Marketing</h4>
+                                    <div class="card-number">
+                                        <p>14</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Topic Listing Template based on Bootstrap 5</p>
+                            </div>
+                            <img src="img/Digital Marketing.svg" alt="web design">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Content Marketing</h4>
+                                    <div class="card-number">
+                                        <p>75</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Content Marketing.svg" alt="graphic">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Brand Management</h4>
+                                    <div class="card-number">
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Brand Management.svg" alt="logo design">
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div id="Finance" style="display:none" class="cards-display">
+                    <div class="cards-container">
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Investment Strategies</h4>
+                                    <div class="card-number">
+                                        <p>14</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Topic Listing Template based on Bootstrap 5</p>
+                            </div>
+                            <img src="img/Investment Strategies.svg" alt="web design">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Financial Planning</h4>
+                                    <div class="card-number">
+                                        <p>75</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Financial Planning.svg" alt="Financial Planning">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Risk Management</h4>
+                                    <div class="card-number">
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Risk Management.svg" alt="Risk Management">
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div id="Music" style="display:none" class="cards-display">
+                    <div class="cards-container">
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Music Production</h4>
+                                    <div class="card-number">
+                                        <p>14</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Topic Listing Template based on Bootstrap 5</p>
+                            </div>
+                            <img src="img/Music Production.svg" alt="Music Production">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Music Marketing</h4>
+                                    <div class="card-number">
+                                        <p>75</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Music Marketing.svg" alt="Music Marketing">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Music Composition</h4>
+                                    <div class="card-number">
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Music Composition.svg" alt="Music Composition">
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div id="Education" style="display:none" class="cards-display">
+                    <div class="cards-container">
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Curriculum Development</h4>
+                                    <div class="card-number">
+                                        <p>14</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Topic Listing Template based on Bootstrap 5</p>
+                            </div>
+                            <img src="img/Curriculum Development.svg" alt="Curriculum Development">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>E-Learning Solutions</h4>
+                                    <div class="card-number">
+                                        <p>75</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/E-Learning Solutions.svg" alt="E-Learning Solutions">
+                        </div>
+                    
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="card-heading">
+                                    <h4>Educational Assessment</h4>
+                                    <div class="card-number">
+                                        <p>100</p>
+                                    </div>
+                                </div>
+                                <p class="card-body">Lorem Ipsum dolor sit amet consectetur</p>
+                            </div>
+                            <img src="img/Educational Assessment.svg" alt="Educational Assessment">
+                        </div>
+                    
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="steps">
+            <div class="bg-img">
+                <img src="img/Background.jpg" alt="people working">
+                <div class="steps-content">
+                    <div class="heading-tabs steps-heading">
+                        <p>How does it work?</p>
+                    </div>
+                    <div class="content-box">
+                        <div class="icons">
+                            <div class="round-icon-box">
+                                <div class="icon-border">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </div>
+                            <div class="icon-sepration"></div>
+                            <div class="round-icon-box">
+                                <div class="icon-border">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </div>
+                            </div>
+                            <div class="icon-sepration"></div>
+                            <div class="round-icon-box">
+                                <div class="icon-border">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="steps-body">
+                            <div class="box">
+                                <div class="box-heading">
+                                    <p>Search your favourite topic</p>
+                                </div>
+                                <div class="box-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciends, cumque magnam? Sequi, cupiditate quibusdam alias ilium sed esse ad dignissimos libero sunt, quisquam numquam aliquam? Voluptas, accusamus omnis?</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-heading">
+                                    <p>Bookmark & Keep it for yourself</p>
+                                </div>
+                                <div class="box-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi necessitatibus aperiam repudiandae nam omnis est vel quo, nihil repellat quia velit error modi earum similique odit labore. Doloremque, repudiandae?</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="box-heading">
+                                    <p>Read & Enjoy</p>
+                                </div>
+                                <div class="box-body">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi vero quisquam, rem assumenda similique voluptas distinctio, iste est hic eveniet debistis ut ducimus beatae id? Quam culpa deleniti officils autem?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-text">
+                        <p>Want to learn more?</p>
+                        <button>Check out Youtube</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/script.js"></script>
+</body>
+</html>

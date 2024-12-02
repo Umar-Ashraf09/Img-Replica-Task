@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.courses {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.heading-tabs {
+    box-shadow: 0 8px 10px 0 rgba(185, 185, 185, 0.09);
+}
+
+.heading-tabs h1 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.tabs {
+    padding-top: 2rem;
+}
+
+.tabs-list {
+    margin: 0 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs-list button {
+    padding: 0 1.3rem 0.8rem 1.3rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: none;
+    cursor: pointer;
+    border: none;
+    color: #B8B8B8;
+}
+
+.tabs-list button.active {
+    border-bottom: 0.15rem solid rgb(3, 136, 69);
+    color: black;
+}
+
+.courses-cards {
+    margin: 3.5rem 0 0 0;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.card {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+    margin: 1.5rem;
+    box-shadow: 0px 6px 46px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 5px 31px 26px -10px rgba(0, 0, 0, 0.4);
+    transform: translatey(-5px);
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card-body {
+    font-size: 1.1rem;
+    margin: 0 1.5rem 1rem 0;
+    color: #9a9a9a;
+}
+
+.card-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+}
+
+.card-number {
+    background-color: #0DABEC;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+}
+
+.card img {
+    width: 100%;
+    height: 15rem;
+}
+
+.steps {
+    margin: 6rem 0 0 0;
+    position: relative;
+}
+
+.bg-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, rgba(138, 207, 202, 0.85), rgba(57, 112, 132, 0.85));
+}
+
+.bg-img img {
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+    transform: scaleX(-1);
+}
+
+.steps-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.round-icon-box {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    background-color: #6fbcb3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-border {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    border: 0.19rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-border i {
+    font-size: 1.3rem;
+}
+
+.icon-sepration {
+    width: 0.5rem;
+    height: 10rem;
+    background-color: #6fbcb3;
+}
+
+.steps-heading {
+    margin: 0 0 2rem 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.steps-body {
+    padding: 1rem 0.9rem 0 2rem;
+}
+
+.box {
+    text-align: left;
+    margin-bottom: 5.5rem;
+}
+
+.box-heading {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.box-body p {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 2rem;
+    color: #eeeded;
+}
+
+.bottom-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.bottom-text p {
+    margin-right: 1.3rem;
+}
+
+.bottom-text button {
+    background: none;
+    color: #cccbcb;
+    cursor: pointer;
+    border: 0.13rem solid #cccbcb;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+}
+
+.bottom-text button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+    border: 0.13rem solid white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
