@@ -9,6 +9,14 @@ body {
     font-style: normal;
 }
 
+:root {
+    --primary-color: #0DABEC;
+    --secondary-color: #6fbcb3;
+    --text-gray: #9a9a9a;
+    --white: #ffffff;
+    --black: #000000;
+}
+
 .courses {
     text-align: center;
     padding-top: 3rem;
@@ -41,12 +49,12 @@ body {
     background: none;
     cursor: pointer;
     border: none;
-    color: #B8B8B8;
+    color: var(--text-gray);
 }
 
 .tabs-list button.active {
     border-bottom: 0.15rem solid rgb(3, 136, 69);
-    color: black;
+    color: var(--black);
 }
 
 .courses-cards {
@@ -86,6 +94,11 @@ body {
     transform: translatey(-5px);
 }
 
+.card:hover img {
+    filter: brightness(0.9);
+    transition: 0.3s ease-in-out;
+}
+
 .card-content {
     text-align: left;
 }
@@ -93,7 +106,7 @@ body {
 .card-body {
     font-size: 1.1rem;
     margin: 0 1.5rem 1rem 0;
-    color: #9a9a9a;
+    color: var(--text-gray);
 }
 
 .card-heading {
@@ -106,10 +119,10 @@ body {
 }
 
 .card-number {
-    background-color: #0DABEC;
+    background-color: var(--primary-color);
     font-weight: 500;
     border-radius: 0.2rem;
-    color: white;
+    color: var(--white);
     font-size: 0.7rem;
     padding: 0.3rem;
 }
@@ -146,7 +159,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--white);
     text-align: center;
 }
 
@@ -165,7 +178,7 @@ body {
     width: 5rem;
     height: 5rem;
     border-radius: 2.5rem;
-    background-color: #6fbcb3;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,7 +188,7 @@ body {
     width: 4rem;
     height: 4rem;
     border-radius: 2rem;
-    border: 0.19rem solid white;
+    border: 0.19rem solid var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +201,7 @@ body {
 .icon-sepration {
     width: 0.5rem;
     height: 10rem;
-    background-color: #6fbcb3;
+    background-color: var(--secondary-color);
 }
 
 .steps-heading {
@@ -241,11 +254,46 @@ body {
 }
 
 .bottom-text button:hover {
-    background: white;
-    color: black;
+    background: var(--white);
+    color: var(--black);
     cursor: pointer;
-    border: 0.13rem solid white;
+    border: 0.13rem solid var(--white);
     padding: 0.5rem 0.8rem;
     border-radius: 1.5rem;
-    transition: 0.2s ease-in-out;
 }
+
+button, .card, .bottom-text button {
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .tabs-list {
+        margin: 0 10%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .steps-content {
+        padding: 1rem;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .icon-sepration {
+        height: 0.5rem;
+        width: 10rem;
+    }
+}
+
